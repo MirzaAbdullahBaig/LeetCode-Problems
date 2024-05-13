@@ -17,3 +17,25 @@ const getConcatenation = (nums) => {
     }
     return temp_arr
 };
+
+
+// 2nd Method || Solved link => https://leetcode.com/problems/concatenation-of-array/submissions/1256844074
+
+const getConcatenation2 = (nums) => {
+    let n = nums.length
+    for (let i = 0; i < n; i++) {
+        nums.push(nums[i])
+    }
+
+    return nums
+};
+
+
+// 3rd Method || Solved Link => https://leetcode.com/problems/concatenation-of-array/submissions/1256848051
+
+const getConcatenation3 = (nums) => [...nums, ...nums];
+
+
+// 4th Method || Solved Link => https://leetcode.com/problems/concatenation-of-array/submissions/1256855479
+
+const getConcatenation4 = (nums) => nums.concat(nums)
